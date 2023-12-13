@@ -8,6 +8,10 @@
   list-style-type: none;
 }
 
+.font-2 {
+  font-family: "Dancing Script", cursive;
+}
+
 .menu-normal li {
   display: flex;
   justify-content: space-between;
@@ -16,13 +20,13 @@
 
 .first-container {
   width: auto;
-  padding: 10%;
+  padding: 6% 10% 2% 10%;
   background: #002850;
   color: #cdbebe;
 }
 .first-container h2 {
   font-family: "Lobster", sans-serif;
-  font-size: 44px;
+  font-size: 60px;
 }
 .first-container h3 {
   display: flex;
@@ -46,7 +50,7 @@
 .first-container__menu .menu-normal {
   width: 60%;
   font-family: "Calistoga", serif;
-  font-size: 14px;
+  font-size: 15px;
   letter-spacing: 1px;
   text-transform: uppercase;
   line-height: 22px;
@@ -62,7 +66,7 @@
   grid-template-rows: repeat(2, auto);
   margin: 10px 0;
   font-family: "Calistoga", serif;
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -79,6 +83,62 @@
 @media screen and (max-width: 700px) {
   .first-container__menu .menu-special__price {
     text-align: right;
+  }
+}
+
+.second-container {
+  background: #c81e46;
+  padding: 2% 10%;
+  color: #cdbebe;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media screen and (max-width: 700px) {
+  .second-container {
+    flex-direction: column;
+  }
+}
+.second-container__menu__presentation {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+}
+@media screen and (max-width: 700px) {
+  .second-container__menu__presentation {
+    text-align: center;
+  }
+}
+.second-container__menu__presentation p {
+  text-transform: uppercase;
+}
+.second-container__menu__presentation p span {
+  text-transform: none;
+}
+.second-container__menu__price {
+  width: auto;
+  font-family: "Calistoga", serif;
+  font-size: 20px;
+  display: flex;
+  min-width: 300px;
+}
+@media screen and (max-width: 700px) {
+  .second-container__menu__price {
+    font-size: 16px;
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+.second-container__menu__price p:nth-child(1) {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.second-container__menu__price div {
+  margin: 7%;
+}
+@media screen and (max-width: 700px) {
+  .second-container__menu__price div {
+    margin: 4%;
   }
 }
 
