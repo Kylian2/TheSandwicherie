@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Calistoga&family=Dancing+Script:wght@400;500;600;700&family=Lobster&family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Calistoga&family=Dancing+Script:wght@400;500;600;700&family=Lobster&family=Shizuru&family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap");
 * {
   padding: 0;
@@ -175,7 +175,7 @@
   font-family: "Lobster", sans-serif;
   font-size: 50px;
   color: #c81e46;
-  margin-bottom: 30px;
+  margin: 10px 0;
 }
 .third-container__sous-container-1 li {
   display: flex;
@@ -205,6 +205,7 @@
 .third-container__sous-container-2 .menu p {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .third-container__sous-container-2 .menu.little-text {
   font-size: 16px;
@@ -214,14 +215,29 @@
   color: #c81e46;
   margin-left: 10px;
 }
+@media screen and (max-width: 700px) {
+  .third-container__sous-container-2 .menu__price {
+    font-size: 40px;
+  }
+}
+.third-container__sous-container-2 .menu__price-little {
+  font-size: 16px;
+  color: #c81e46;
+}
 .third-container__sous-container-2 .menu__size {
-  font-size: 30px;
+  font-size: 35px;
+  font-family: "Shizuru", cursive;
+}
+@media screen and (max-width: 700px) {
+  .third-container__sous-container-2 .menu__size {
+    font-size: 40px;
+  }
 }
 .third-container__sous-container-2 h2 {
   font-family: "Yanone Kaffeesatz", sans-serif;
   text-transform: uppercase;
   font-size: 60px;
-  margin-bottom: 30px;
+  margin: 10px 0;
 }
 .third-container__sous-container-2 > div {
   border-top: 2px #002850 dotted;

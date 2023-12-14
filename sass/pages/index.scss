@@ -149,7 +149,7 @@
             font-family: $font3;
             font-size: 50px;
             color: $color2;
-            margin-bottom: 30px;
+            margin: 10px 0 ;
         }
         li{
             display: flex;
@@ -178,6 +178,7 @@
             p{
                 display: flex;
                 justify-content: space-between;
+                align-items: center;
             }
             &.little-text{
                 font-size: 16px; 
@@ -186,16 +187,28 @@
                 font-size: 30px;
                 color: $color2;
                 margin-left: 10px;
+                @include paysage-mobile{
+                    font-size: 40px;
+                }
+                &-little{
+                    font-size: 16px;
+                    color: $color2;
+                }
             }
             &__size{
-                font-size: 30px;
+                font-size: 35px;
+                font-family: $fontSpecial;
+                @include paysage-mobile{
+                    font-size: 40px;
+                }
             }
         }
         h2{
             font-family: $font4;
             text-transform: uppercase;
             font-size: 60px;
-            margin-bottom: 30px;
+            margin: 10px 0 ;
+
         }
         >div{
             border-top: 2px $color1 dotted;
