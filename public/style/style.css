@@ -245,4 +245,27 @@
   padding: 10px 0;
 }
 
+.fourth-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #002850;
+  padding: 2% 7%;
+  color: #c81e46;
+  font-family: "Calistoga", serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+@media screen and (max-width: 700px) {
+  .fourth-container {
+    padding: 7% 7%;
+  }
+}
+.fourth-container span {
+  text-transform: capitalize;
+  color: #e6dbdb;
+  margin: 7px;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -218,3 +218,24 @@
         }
     }
 }
+
+.fourth-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $color1;
+    padding: 2% 7%;
+    color: $color2;
+    font-family: $text;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    @include paysage-mobile{
+        padding: 7% 7%;
+    }
+    span{
+        text-transform: capitalize;
+        color: $color3;
+        margin: 7px;
+    }
+}
